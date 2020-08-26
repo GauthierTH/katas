@@ -19,6 +19,8 @@ module FileDb
       row[:id] = row_id
       @table << row
       self.save
+
+      row
     end
 
     def find(id)
